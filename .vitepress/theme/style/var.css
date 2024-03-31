@@ -1,0 +1,89 @@
+/* var.css */
+:root {
+    --vp-c-brand-1: #18794e;
+    --vp-c-brand-2: #299764;
+    --vp-c-brand-3: #30a46c;
+    --vp-custom-block-tip-bg: var(--vp-c-green-soft);
+  }
+  
+  .dark {
+    --vp-c-brand-1: #3dd68c;
+    --vp-c-brand-2: #30a46c;
+    --vp-c-brand-3: #298459;
+  }
+  /* 以前的vp-c-brand已弃用 */
+
+  /* .vitepress\theme\style\var.css */
+h3 {
+    background: -webkit-linear-gradient(
+         120deg, 
+         #3C979F 80%,
+         #AE4C9D 
+         );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h4 {
+    background: -webkit-linear-gradient(
+         120deg, 
+         #5b3c9f 80%,
+         #ae4c4f 
+         );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .vp-doc a {
+    text-decoration: none;
+}
+
+/* 提示框背景颜色 */
+
+  
+  /* 提示框 */
+  .custom-block.tip {
+    border-color: var(--vp-c-green-2);
+  }
+  
+  /* 警告框 */
+  .custom-block.warning {
+    /* border-color: #d97706; */
+    border-color: var(--vp-c-yellow-2);
+  }
+  
+  /* 危险框 */
+  .custom-block.danger {
+    /* border-color: #f43f5e; */
+    border-color: var(--vp-c-red-2);
+  }
+
+.vp-doc blockquote {
+    margin: 16px 0;
+    border-left: 3px solid green;
+    padding-left: 16px;
+    transition: border-color 0.5s;
+}
+.vp-doc blockquote p{
+  font-weight: bold;
+  color: green;
+}
+blockquote {
+    margin: 0;
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+img{
+  border: 1px solid darkgrey;
+  border-radius: 10px;
+}
+
+.vp-doc :not(pre, h1, h2, h3, h4, h5, h6) > code{
+ font-weight: bold;
+}
